@@ -26,13 +26,13 @@ public class keyboardInput : MonoBehaviour {
 			rigidbody2D.AddForce (Vector3.up * jumpSpeed);
 			jump = false;
 		}
-		if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") > 0)
+		if (Input.GetAxis("Horizontal") > 0)
 		{
 			if (Magnitude < mVelocity) {
 				rigidbody2D.AddForce(Vector3.right * moveSpeed * Time.deltaTime);
 			}
 		}
-		if (Input.GetButton("Horizontal") && Input.GetAxisRaw("Horizontal") > 0)
+		if (Input.GetAxis("Horizontal") < 0)
 		    {
 			if (Magnitude < mVelocity) {
 				rigidbody2D.AddForce(Vector3.left * moveSpeed * Time.deltaTime);

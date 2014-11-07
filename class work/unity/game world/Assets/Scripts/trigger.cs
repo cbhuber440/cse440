@@ -3,7 +3,7 @@ using System.Collections;
 
 public class trigger : MonoBehaviour {
 
-	void onTriggerEnter2d( Collider2D other )
+	void OnTriggerEnter2D( Collider2D other )
 	{
 		Debug.Log ("You reached the top!");
 	}
