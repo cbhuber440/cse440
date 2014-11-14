@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\keyboardInput.cs">
     <Files>
-      <File FileName="Assets\Scripts\keyboardInput.cs" Line="35" Column="20" />
+      <File FileName="Assets\Scripts\keyboardInput.cs" Line="12" Column="26" />
+      <File FileName="Assets\Scripts\Score.cs" Line="10" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2,9 +2,13 @@
 using System.Collections;
 
 public class keyboardInput : MonoBehaviour {
+
+	public int score = 0;
+
 	public float moveSpeed;
 	public float jumpSpeed;
 	public float mVelocity;
+	public AudioClip jumpSound;
 	private float Magnitude;
 	private bool jump = false;
 
@@ -14,16 +18,12 @@ public class keyboardInput : MonoBehaviour {
 		}
 	}
 
-	/* void Jump() {
-		animation.Play ("jump");
-		rigidbody.AddForce (Vector3.up * jumpSpeed);
-	}*/
-
 	void FixedUpdate () {
 		Magnitude = rigidbody2D.velocity.magnitude;
 
 		if (Input.GetButtonDown ("Jump") && jump) {
 			rigidbody2D.AddForce (Vector3.up * jumpSpeed);
+			gameObject.audio.PlayOneShot(jumpSound);
 			jump = false;
 		}
 		if (Input.GetAxis("Horizontal") > 0)
